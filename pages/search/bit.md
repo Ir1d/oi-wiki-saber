@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /Flipped/search/bit
+permalink: /search/bit
 ---
 
 ## 简介

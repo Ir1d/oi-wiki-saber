@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /Flipped/intro/icpc
+permalink: /intro/icpc
 ---
 
 ## 赛事介绍

@@ -19,17 +19,17 @@ themeConfig:
         title: "简介",
         children:
           [
-            { title: "Getting Started", link: "/Flipped/" },
-            { title: "ICPC/CCPC 赛事与赛制", link: "/Flipped/intro/icpc" },
-            { title: "常见错误", link: "/Flipped/intro/common-mistakes" },
+            { title: "Getting Started", link: "/" },
+            { title: "ICPC/CCPC 赛事与赛制", link: "/intro/icpc" },
+            { title: "常见错误", link: "/intro/common-mistakes" },
           ],
       },
       {
         title: "搜索",
         children:
           [
-            { title: "A*", link: "/Flipped/search/astar" },
-            { title: "BIT", link: "/Flipped/search/bit" },
+            { title: "A*", link: "/search/astar" },
+            { title: "BIT", link: "/search/bit" },
           ],
       },
     ]

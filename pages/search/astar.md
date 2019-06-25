@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /Flipped/search/astar
+permalink: /search/astar
 ---
 
 A\*算法是 [BFS](/search/bfs) 的一种改进。

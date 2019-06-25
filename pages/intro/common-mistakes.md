@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /Flipped/intro/common-mistakes
+permalink: /intro/common-mistakes
 ---
 
 本页面主要分享一下在竞赛中经常/很多人会出现的错误。
