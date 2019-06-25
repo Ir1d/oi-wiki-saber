@@ -23,13 +23,25 @@
       <div class="header-right">
         <ul class="menu">
           <li class="menu-item">
-            <saber-link to="/docs">Guide</saber-link>
+            <saber-link to="/intro">简介</saber-link>
           </li>
           <li class="menu-item">
-            <saber-link to="/tutorial/tutorial.html">Tutorial</saber-link>
+            <saber-link to="/basic.html">基础部分</saber-link>
           </li>
           <li class="menu-item">
-            <saber-link to="/blog/">Blog</saber-link>
+            <saber-link to="/search/">搜索</saber-link>
+          </li>
+          <li class="menu-item">
+            <saber-link to="/dp/">动态规划</saber-link>
+          </li>
+          <li class="menu-item">
+            <saber-link to="/string/">字符串</saber-link>
+          </li>
+          <li class="menu-item">
+            <saber-link to="/math/">数学</saber-link>
+          </li>
+          <li class="menu-item">
+            <saber-link to="/ds/">数据结构</saber-link>
           </li>
           <li class="menu-item">
             <a href="https://chat.saber.land" target="_blank" class="discord-link">
