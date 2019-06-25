@@ -1,0 +1,44 @@
+# theme: minima
+theme: ./src
+
+siteConfig:
+  url: https://example.com
+  author: Author of This Site
+  email: author@your-domain.com
+  description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
+
+themeConfig:
+  # nav:
+  #   - text: Home
+  #     link: /
+  # - text: About
+  #   link: /about.html
+  sidebarMenu:
+    [
+      {
+        title: "简介",
+        children:
+          [
+            { title: "Getting Started", link: "/" },
+            { title: "ICPC/CCPC 赛事与赛制", link: "/intro/icpc" },
+            { title: "常见错误", link: "/intro/common-mistakes" },
+          ],
+      },
+      {
+        title: "搜索",
+        children:
+          [
+            { title: "A*", link: "/search/astar" },
+            { title: "BIT", link: "/search/bit" },
+          ],
+      },
+    ]
+  social:
+    twitter: saber_land
+    github: egoist
+    rss: true
+plugins:
+  - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-feed
+    options:
+      atomFeed: true
