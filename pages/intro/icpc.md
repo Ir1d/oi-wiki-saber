@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /intro/icpc
+permalink: /Flipped/intro/icpc
 ---
 
 ## 赛事介绍
@@ -48,11 +48,9 @@ WannaFly Camp
 
 - 叉姐的 ICPCCamp Wiki <https://icpc.camp/>
 
->  OI Wiki 这边也在筹备类似的功能，有需求的队伍可以来联系
+> OI Wiki 这边也在筹备类似的功能，有需求的队伍可以来联系
 
 ## 训练资源
 
 - **OI Wiki <https://oi-wiki.org>**
 - Codeforces Gym <https://codeforces.com/gyms>
-
-
