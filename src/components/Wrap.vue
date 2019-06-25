@@ -8,7 +8,7 @@
           <slot name="default"/>
           <div class="edit-info" v-if="showEditInfo">
             <span class="last-edited">Last Edited on {{ updatedDate }}</span>
-            <a class="edit-link" target="_blank" :href="editLink">Edit This Page on GitHub</a>
+            <a class="edit-link" target="_blank" :href="editLink">发现有问题？在 Github 上编辑这个页面</a>
           </div>
         </div>
         <div class="rightbar" v-if="showRightbar">
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import format from 'date-fns/format'
-import Header from './Header.vue'
-import Leftbar from './Leftbar.vue'
-import Toc from './Toc.vue'
+import format from "date-fns/format";
+import Header from "./Header.vue";
+import Leftbar from "./Leftbar.vue";
+import Toc from "./Toc.vue";
 
 export default {
   components: {
@@ -55,17 +55,17 @@ export default {
 
   computed: {
     updatedDate() {
-      return format(this.page.attributes.updatedAt, 'MMMM DD, YYYY')
+      return format(this.page.attributes.updatedAt, "MMMM DD, YYYY");
     },
 
     editLink() {
-      const { slug, type } = this.page.attributes
-      return `https://github.com/egoist/saber/blob/master/website/pages/${
-        type === 'post' ? '_posts/' : ''
-      }${slug}.md`
+      const { slug, type } = this.page.attributes;
+      return `https://github.com/24OI/OI-wiki/blob/master/docs/${
+        type === "post" ? "_posts/" : ""
+      }${slug}.md`;
     }
   }
-}
+};
 </script>
 
 <style scoped>
