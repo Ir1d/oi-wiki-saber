@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://example.com</id>
+    <title/>
+    <updated>2019-06-25T08:21:48.755Z</updated>
+    <generator>Saber</generator>
+    <author>
+        <name>Author of This Site</name>
+        <email>author@your-domain.com</email>
+        <uri>https://example.com</uri>
+    </author>
+    <link rel="alternate" href="https://example.com"/>
+    <subtitle>Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.</subtitle>
+    <rights>All rights reserved</rights>
+</feed>
