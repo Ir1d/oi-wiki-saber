@@ -31,7 +31,7 @@ export default {
   props: ["page"],
 
   mounted() {
-    console.log(window.MathJax);
+    // console.log(window.MathJax);
     if (window.MathJax) {
       window.MathJax.Hub.Config({
         showProcessingMessages: false, //关闭js加载过程信息
@@ -48,7 +48,8 @@ export default {
             "pre",
             "code",
             "a"
-          ] //避开某些标签
+          ], //避开某些标签
+          processEscapes: true
         },
         "HTML-CSS": {
           availableFonts: ["STIX", "TeX"] //可选字体
