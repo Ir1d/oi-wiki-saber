@@ -59,3 +59,4 @@ plugins:
 markdown:
   plugins:
     - resolve: markdown-it-math
+    - resolve: markdown-it-anchor

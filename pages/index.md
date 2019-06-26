@@ -19,5 +19,6 @@ Known Problems:
 - pymdown details 插件的语法
   - vuepress 好像有实现了差不多的功能，把 pymdown 的正则抄过来应该就行了
 - 页面底部的那几个 block
+  - we need a Footer component
 - meta 区维护作者信息
 - 右上角 repo stats
