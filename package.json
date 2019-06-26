@@ -34,6 +34,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-purifycss": "^0.2.0",
     "headroom.js": "^0.9.4",
+    "markdown-it-anchor": "^5.2.4",
     "markdown-it-math": "^4.1.1",
     "markdown-it-mathjax": "^2.0.0",
     "markdown-it-mathjax-chtml": "^0.1.0",

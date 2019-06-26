@@ -20,31 +20,28 @@
           <saber-link to="/">OI Wiki</saber-link>
         </h1>
       </div>
-      <div class="header-right">
-        <ul class="menu">
-          <li class="menu-item">
-            <saber-link to="/intro">简介</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/basic.html">基础部分</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/search/">搜索</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/dp/">动态规划</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/string/">字符串</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/math/">数学</saber-link>
-          </li>
-          <li class="menu-item">
-            <saber-link to="/ds/">数据结构</saber-link>
-          </li>
+      <div class="our-nav">
+        <!-- <div class="header-right"> -->
+        <nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path
+                  d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"
+                ></path>
+              </svg>
+            </span>
+          </label>
 
-          <li class="menu-item">
+          <div class="trigger" v-if="$themeConfig.nav">
+            <!-- <ul> -->
+            <template v-for="(navItem, index) in $themeConfig.nav">
+              <!-- <li> -->
+              <saber-link :key="index" class="page-link" :to="navItem.link">{{ navItem.text }}</saber-link>
+              <!-- </li> -->
+            </template>
+            <!-- </!-->
             <a href="https://github.com/24OI/OI-wiki" target="_blank" class="github-link">
               <svg
                 aria-hidden="true"
@@ -62,8 +59,8 @@
                 ></path>
               </svg>
             </a>
-          </li>
-        </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </header>
@@ -173,7 +170,12 @@ export default {
   font-weight: 700;
 }
 
-.menu {
+.github-link svg {
+  ]width: 25px;
+  height: 25px;
+}
+
+/* .menu {
   list-style: none;
   margin: 0;
   font-size: 1rem;
@@ -214,6 +216,81 @@ export default {
     &:hover {
       color: #6c83d4;
     }
+  }
+} */
+
+.site-nav {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  background-color: #fdfdfd;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  text-align: right;
+}
+.site-nav .nav-trigger {
+  display: none;
+}
+.site-nav .menu-icon {
+  float: right;
+  width: 36px;
+  height: 26px;
+  line-height: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+.site-nav .menu-icon > svg path {
+  fill: #424242;
+}
+.site-nav label[for="nav-trigger"] {
+  display: block;
+  float: right;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  cursor: pointer;
+}
+.site-nav input ~ .trigger {
+  clear: both;
+  display: none;
+}
+.site-nav input:checked ~ .trigger {
+  display: block;
+  padding-bottom: 5px;
+}
+.site-nav .page-link {
+  color: #111;
+  line-height: 1.5;
+  display: block;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.site-nav .page-link:not(:last-child) {
+  margin-right: 0;
+}
+@media screen and (min-width: 600px) {
+  .site-nav {
+    position: static;
+    float: right;
+    border: none;
+    background-color: inherit;
+  }
+  .site-nav label[for="nav-trigger"] {
+    display: none;
+  }
+  .site-nav .menu-icon {
+    display: none;
+  }
+  .site-nav input ~ .trigger {
+    display: block;
+  }
+  .site-nav .page-link {
+    display: inline;
+    padding: 0;
+    margin-left: auto;
+  }
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 20px;
   }
 }
 </style>

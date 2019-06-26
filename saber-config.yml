@@ -8,11 +8,22 @@ siteConfig:
   description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
 
 themeConfig:
-  # nav:
-  #   - text: Home
-  #     link: /
-  # - text: About
-  #   link: /about.html
+  nav:
+    - text: 简介
+      link: /intro
+    - text: 基础部分
+      link: /basic
+    - text: 搜索
+      link: /search
+    - text: 动态规划
+      link: /dp
+    - text: 字符串
+      link: /string
+    - text: 数学
+      link: /math
+    - text: 数据结构
+      link: /ds
+
   sidebarMenu:
     [
       {
