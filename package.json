@@ -39,7 +39,7 @@
     "markdown-it-math": "^4.1.1",
     "markdown-it-mathjax": "^2.0.0",
     "markdown-it-mathjax-chtml": "^0.1.0",
-    "markdown-it-mathjax-node": "^0.3.0",
+    "markdown-it-mathjax-node": "^0.4.1",
     "mathjax-node": "^2.1.1",
     "mathjax-node-page": "^3.0.1",
     "nprogress": "^0.2.0",
