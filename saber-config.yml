@@ -1,4 +1,5 @@
 # theme: minima
+# theme: ./saber-theme-tufte/src
 theme: ./src
 
 siteConfig:
@@ -61,26 +62,26 @@ markdown:
   headings:
     permalink: true
   plugins:
-    - resolve: markdown-it-math
-    # - resolve: markdown-it-mathjax-node
-    #   options:
-    #     renderingOptions:
-    #       {
-    #         ex: 8,
-    #         width: 100,
-    #         useFontCache: true,
-    #         useGlobalCache: false,
-    #         linebreaks: true,
-    #         equationNumbers: "none",
-    #         html: false,
-    #         css: false,
-    #         mml: false,
-    #         svg: true,
-    #         speakText: true,
-    #         speakRuleset: "mathspeak",
-    #         speakStyle: "default",
-    #         timeout: 10000,
-    #         cjkCharWidth: 18,
-    #         format: "inline-TeX",
-    #       }
+    # - resolve: markdown-it-mathjax
+    - resolve: markdown-it-mathjax-node
+      options:
+        renderingOptions:
+          {
+            ex: 8,
+            width: 100,
+            useFontCache: true,
+            useGlobalCache: false,
+            linebreaks: true,
+            equationNumbers: "none",
+            html: false,
+            css: false,
+            mml: false,
+            svg: true,
+            speakText: true,
+            speakRuleset: "mathspeak",
+            speakStyle: "default",
+            timeout: 10000,
+            cjkCharWidth: 18,
+            format: "inline-TeX",
+          }
     - resolve: markdown-it-anchor
