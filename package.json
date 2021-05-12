@@ -43,7 +43,7 @@
     "mathjax-node": "^2.1.1",
     "mathjax-node-page": "^3.0.1",
     "nprogress": "^0.2.0",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-preset-env": "^6.6.0",
     "prismjs": "^1.16.0",
     "remark-clang-format": "^1.0.1",
